@@ -9,7 +9,7 @@ var Seattle = {
     MaxCst: 65,
     AvgCookies : 6.3,
     Cst: 0,
-    array1: [cookiesSold(6.3,3)],
+    array1: [ ],
     sum: 0,
 
     getCst: function (min, max) {
@@ -23,10 +23,6 @@ var Seattle = {
             num= cookiesSold(6.3,this.Cst);
             this.sum+=num;
             // console.log(this.Cst, num);
-            if(i==2){
-                this.array1.shift();
-                this.array1[0]=cookiesSold(6.3,this.Cst);
-            }
             this.array1.push(num);
             //console.log((i+6), this.array1[i]);
         }
@@ -79,7 +75,7 @@ var Tokyo = {
     MaxCst: 24,
     AvgCookies : 1.2,
     Cst: 0,
-    array1: [cookiesSold(1.2 ,3)],
+    array1: [ ],
     sum: 0,
 
     getCst: function (min, max) {
@@ -93,10 +89,6 @@ var Tokyo = {
             num= cookiesSold(1.2,this.Cst);
             this.sum+=num;
             // console.log(this.Cst, num);
-            if(i==2){
-                this.array1.shift();
-                this.array1[0]=cookiesSold(3,this.Cst);
-            }
             this.array1.push(num);
             //console.log((i+6), this.array1[i]);
         }
@@ -150,7 +142,7 @@ var Dubai = {
     MaxCst: 38,
     AvgCookies : 3.7,
     Cst: 0,
-    array1: [cookiesSold(3.7,3)],
+    array1: [ ],
     sum: 0,
 
     getCst: function (min, max) {
@@ -164,10 +156,6 @@ var Dubai = {
             num= cookiesSold(3.7,this.Cst);
             this.sum+=num;
             // console.log(this.Cst, num);
-            if(i==2){
-                this.array1.shift();
-                this.array1[0]=cookiesSold(3.7,this.Cst);
-            }
             this.array1.push(num);
             //console.log((i+6), this.array1[i]);
         }
@@ -220,7 +208,7 @@ var Paris = {
     MaxCst: 38,
     AvgCookies : 2.3,
     Cst: 0,
-    array1: [cookiesSold(2.3,3)],
+    array1: [ ],
     sum: 0,
 
     getCst: function (min, max) {
@@ -234,10 +222,6 @@ var Paris = {
             num= cookiesSold(2.3,this.Cst);
             this.sum+=num;
             // console.log(this.Cst, num);
-            if(i==2){
-                this.array1.shift();
-                this.array1[0]=cookiesSold(2.3,this.Cst);
-            }
             this.array1.push(num);
             //console.log((i+6), this.array1[i]);
         }
@@ -290,7 +274,7 @@ var Lima = {
     MaxCst: 16,
     AvgCookies : 4.6,
     Cst: 0,
-    array1: [cookiesSold(4.6,3)],
+    array1: [ ],
     sum: 0,
 
     getCst: function (min, max) {
@@ -304,10 +288,10 @@ var Lima = {
             num= cookiesSold(4.6,this.Cst);
             this.sum+=num;
             // console.log(this.Cst, num);
-            if(i==2){
-                this.array1.shift();
-                this.array1[0]=cookiesSold(4.6,this.Cst);
-            }
+            // if(i==2){
+            //     this.array1.shift();
+            //     this.array1[0]=cookiesSold(4.6,this.Cst);
+            // }
             this.array1.push(num);
             //console.log((i+6), this.array1[i]);
         }
