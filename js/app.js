@@ -31,7 +31,6 @@ Store.prototype.getArray = function () {
     }
 }
 
-Store.prototype.render = function (All) {
     var container = document.getElementById('Cookies');
 
     var articleE1 = document.createElement('article');
@@ -53,6 +52,7 @@ Store.prototype.render = function (All) {
     headerRow.appendChild(th1);
     th1.textContent = 'Location';
 
+Store.prototype.tableHeader = function (All) {
 
     for (var i = 0; i < this.array1.length; i++) {
         var th2 = document.createElement('th');
@@ -71,6 +71,9 @@ Store.prototype.render = function (All) {
     var th4 = document.createElement('th');
     headerRow.appendChild(th4);
     th4.textContent = 'Daily Location Total';
+}
+Store.prototype.tableContent = function (All) {
+
 
     //second row
     for (var j = 0; j < All.length; j++) {
@@ -93,7 +96,8 @@ Store.prototype.render = function (All) {
 
 
     }
-
+}
+Store.prototype.tableFooter = function (All) {
     var row6 = document.createElement('tr');
     tableE1.appendChild(row6);
 
@@ -101,7 +105,7 @@ Store.prototype.render = function (All) {
     row6.appendChild(td6);
     td6.textContent = 'Total';
     var rowTotal = 0;
-    var allTotal=0;
+    var allTotal = 0;
 
     for (var i = 0; i < this.array1.length; i++) {
 
@@ -112,23 +116,13 @@ Store.prototype.render = function (All) {
         var td7 = document.createElement('td');
         row6.appendChild(td7);
         td7.textContent = rowTotal;
-        allTotal+= rowTotal;
+        allTotal += rowTotal;
     }
-    
+
 
     var td8 = document.createElement('td');
     row6.appendChild(td8);
     td8.textContent = allTotal;
-
-
-
-
-
-
-    // var liE = document.createElement('li');
-    // ulE1.appendChild(liE);
-    // liE.textContent = 'Total: ' + this.sum + ' Cookies';
-
 
 }
 
@@ -165,8 +159,12 @@ for (var j = 0; j < AllStores.length; j++) {
 }
 
 
-AllStores[0].render(AllStores);
+AllStores[0].tableHeader(AllStores);
+AllStores[0].tableContent(AllStores);
+AllStores[0].tableFooter(AllStores);
 
+var sure=1424+	2861+	4279 +	5950 +	7104+	8516+	9971+	11105+	12460+	14193+	15478+	16739+	17987+	19002;
+console.log('sure =  ',sure);
 
 
 
