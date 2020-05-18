@@ -163,8 +163,7 @@ AllStores[0].tableHeader(AllStores);
 AllStores[0].tableContent(AllStores);
 AllStores[0].tableFooter(AllStores);
 
-var sure=1424+	2861+	4279 +	5950 +	7104+	8516+	9971+	11105+	12460+	14193+	15478+	16739+	17987+	19002;
-console.log('sure =  ',sure);
+
 
 
 
