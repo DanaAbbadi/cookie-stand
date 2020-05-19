@@ -66,18 +66,18 @@ body {
 /* Intro */
 .intro {
     /* background-color: #fee2b3; */
-    padding-top: 765px;
+    /* padding-top: 765px;
     background-image: url('../img/hi.gif');
     background-repeat: no-repeat;
     height: 100%;
     background-position: center;
     background-size: cover;
-    padding-bottom: 2cm;
+    padding-bottom: 2cm; */
 
 }
 
 .intro h2{
-    margin-top: 2cm;
+    margin-top: 5cm;
     text-align: center;
     font-size: 50px;
 }
