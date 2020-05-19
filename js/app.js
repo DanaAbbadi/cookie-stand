@@ -24,8 +24,8 @@ Store.prototype.getCst = function (min, max) {
 Store.prototype.getArray = function () {
     var num = 0;
     for (var i = 0; i < 14; i++) {
-        this.Cst = getRandomCst(23, 65);
-        num = cookiesSold(6.3, this.Cst);
+        this.Cst = getRandomCst(this.MinCst, this.MaxCst);
+        num = cookiesSold(this.AvgCookies, this.Cst);
         this.sum += num;
         this.array1.push(num);
     }
