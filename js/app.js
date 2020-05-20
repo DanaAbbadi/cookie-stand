@@ -178,7 +178,6 @@ AllStores[0].tableFooter(AllStores);
 
 
 
-
 // var Seattle = {
 //     location: 'Seattle',   
 //     MinCst: 23,
