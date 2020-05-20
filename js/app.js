@@ -1,5 +1,6 @@
 'use strict';
 
+var newAdd = false;
 
 // Define the constructor and the helper fxns
 var AllStores = [];
@@ -31,26 +32,27 @@ Store.prototype.getArray = function () {
     }
 }
 
-    var container = document.getElementById('Cookies');
+var container = document.getElementById('Cookies');
 
-    var articleE1 = document.createElement('article');
-    container.appendChild(articleE1);
+var articleE1 = document.createElement('article');
+container.appendChild(articleE1);
 
-    var h2E1 = document.createElement('h2');
-    articleE1.appendChild(h2E1);
-    //h2E1.textContent = this.location;
+var h2E1 = document.createElement('h2');
+articleE1.appendChild(h2E1);
+//h2E1.textContent = this.location;
 
 
 
-    var tableE1 = document.createElement('table');
-    container.appendChild(tableE1);
-    //first row
-    var headerRow = document.createElement('tr');
-    tableE1.appendChild(headerRow);
+var tableE1 = document.createElement('table');
+tableE1.id = 'tableId';
+container.appendChild(tableE1);
+//first row
+var headerRow = document.createElement('tr');
+tableE1.appendChild(headerRow);
 
-    var th1 = document.createElement('th');
-    headerRow.appendChild(th1);
-    th1.textContent = 'Location';
+var th1 = document.createElement('th');
+headerRow.appendChild(th1);
+th1.textContent = 'Location';
 
 Store.prototype.tableHeader = function (All) {
 
@@ -79,7 +81,10 @@ Store.prototype.tableContent = function (All) {
     for (var j = 0; j < All.length; j++) {
         var row2 = document.createElement('tr');
         tableE1.appendChild(row2);
-
+        //check if it's a new location
+        if (newAdd === true) {
+            j = All.length - 1;
+        }
         var td1 = document.createElement('td');
         row2.appendChild(td1);
         td1.textContent = All[j].location;
@@ -108,15 +113,18 @@ Store.prototype.tableFooter = function (All) {
     var allTotal = 0;
 
     for (var i = 0; i < this.array1.length; i++) {
+        rowTotal = 0;
 
-        for (var j = 0; j < 5; j++) {
+        for (var j = 0; j < All.length; j++) {
             rowTotal += All[j].array1[i];
-            // console.log(All[j].array1[i]);
+            //console.log(All[j].array1[i]);
         }
         var td7 = document.createElement('td');
         row6.appendChild(td7);
         td7.textContent = rowTotal;
+
         allTotal += rowTotal;
+        
     }
 
 
@@ -165,7 +173,50 @@ AllStores[0].tableFooter(AllStores);
 
 
 
+// Using the form
 
+var addLocation = document.getElementById('addLocation');
+
+addLocation.addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log(event);
+
+    var storeLocation = event.target.Location.value;
+    console.log(storeLocation);
+
+    var storeMin = parseInt(event.target.Minimum_customer.value);
+    console.log(storeMin);
+
+    var storeMax = parseInt(event.target.Maxmum_customer.value);
+    console.log(storeMax);
+
+    var storeAvg = parseFloat(event.target.Average_cookies.value);
+    console.log(storeAvg);
+
+    // location, MinCst, MaxCst, AvgCookies
+    var newLocation = new Store(storeLocation, storeMin, storeMax, storeAvg);
+    //AllStores.push(newLocation);
+    // console.log(newLocation);
+
+    //AllStores.pop(newLocation)
+    console.table(AllStores);
+
+    newLocation.getCst(this.MinCst, this.MaxCst);
+    newLocation.getArray();
+    row();
+    newAdd = true;
+    newLocation.tableContent(AllStores);
+    newLocation.tableFooter(AllStores);
+
+});
+
+var rawdelete = 0;
+function row() {
+    rawdelete = AllStores.length;
+    console.log(rawdelete)
+    document.getElementById("tableId").deleteRow(rawdelete);
+
+}
 
 
 

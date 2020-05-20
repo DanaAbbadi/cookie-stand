@@ -64,6 +64,7 @@ background-color: black;
 }
 
 
+
 /* end of header  */
 
 /* Intro */
@@ -298,7 +299,11 @@ text-align: center;
 
 } 
 
-/* sales*/
+/* sales page*/
+.body2{
+  background-color: rgb(100, 94, 59);
+}
+/*table*/
 table {
     border: groove;
     border-collapse: collapse;
@@ -317,6 +322,12 @@ tr:hover {background-color: #f5f5f5;}
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 
+/*Form*/
+
+#addLocation{
+  background-color: whitesmoke;
+  color: black;
+}
 
 
 .footer{
