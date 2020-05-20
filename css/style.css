@@ -3,11 +3,12 @@
 body {
     font-family:'Quicksand', sans-serif;
     font-size: 20px;
-    background-image: url('../img/mon.jpg'); /*dala*/
-    background-repeat: no-repeat;
+background-color: black;  
+  background-repeat: no-repeat;
     height: 100%;
     background-position: center;
     background-size: cover;
+    color: goldenrod;
 }
 
 
@@ -15,13 +16,15 @@ body {
 
 
 .my-header{
-    background-color: #8d6262; /*dala2*/
+    background-image: url('https://image.freepik.com/free-vector/gold-light-line-black-background_33869-1311.jpg');
+    background-position: center;
+    /* background-color: #8d6262; dala2 */
     color: #f5f5f5;
     padding: 20px;
     position: fixed;
     top:0;
     width: 100%;
-    height: 30px;
+    height: 48px;
     padding-bottom: 50px;
 
     
@@ -34,7 +37,7 @@ body {
  #sal {                  /*salmon picture */
     display: block;
     position: fixed;
-    left: 671px;
+    left: 646px;
     width: 263px;
     height: 78px;
 }
@@ -81,20 +84,34 @@ body {
     margin-right: auto;
     width: 26%;
     margin-top: 2cm;
+    position: relative;
 }
-.pic3{
-    border: groove;
-    margin-top: 166px;
+ .fish 
+    {
+        position: absolute;
+        top: 355px;
+        left: 682px;
+        transform: rotate(-90deg);
+        height: 193px;
+        width: 211px;
+    } 
+.pic3{ 
+    background-image: url('https://i.pinimg.com/originals/9a/7d/82/9a7d82e52c3095a7f7cb2b7ff13e92d3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    /* border: groove; */
+    margin-top: 161px;
     margin-left: 70px;
     margin-right: 70px;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
 } 
 .snacks {
-    width: 200px;
-    height: 150px;
-    margin-left: 5cm;
+    width: 766px;
+    height: 727px;
+    margin-left: 7cm;
     margin-top: 5cm;
-    margin-top: 10px;
+    margin-top: -70px;
 
   }
 
@@ -113,12 +130,13 @@ body {
 
 /* Info */
 .infor{
-    background-color: papayawhip;
+    background-color: #e0d8d8;
     position: static;
     border: groove;
     margin-right: 20%;
     margin-left: 18%;
     margin-top: 3cm;
+    color: black;
 
 }
 .infor p{
@@ -138,7 +156,7 @@ body {
 
 #history{
     font-size: 50px;
-    text-shadow: burlywood;
+    text-shadow: #ca9e4d;
     font-weight: bold;
 
 
@@ -163,7 +181,7 @@ body {
     font-family: 'Courgette', cursive;
     color: black;
     font-size: 50px;
-    background-color: rosybrown;
+    background-color:rgba(63, 45, 3, 0.959) ;
   }
 
   #menu ul {
@@ -178,6 +196,7 @@ body {
   
   #menu li {
     margin: 10px 0px 0px 0px;
+    color: rgb(148, 115, 33);
   }
 
   /*breaker*/
@@ -188,8 +207,20 @@ body {
   }
   
 /*familey*/
+.snacks1 {
+    width: 70px;
+    height: 70px;
+    margin-top: 5cm;
+    margin-top: 76px;
+    /* left: 60px; */
+    margin-left: 170px;
+    margin-bottom: 14px;
+    margin-right: 91px;
+
+  }
+
 .familey{
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 .familey p{
@@ -233,6 +264,11 @@ body {
   
 .location a {
     text-decoration: none;
+    color: goldenrod;
+    margin-top: 10px;
+  }
+  #down{
+      margin-bottom: 3cm;
   }
 
   .loc {
@@ -251,6 +287,9 @@ text-align: center;
     height:15%;
     margin-left: 1cm;
 
+  }
+  .loc ul li a{
+      color: goldenrod;
   }
   
   #div2{
@@ -282,7 +321,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 .footer{
     margin-top: 3cm;
-    background-color: #8d6262;
+    background-color: rgba(201, 145, 5, 0.747);
     color: black;
     height: auto;
     width: 100%;
