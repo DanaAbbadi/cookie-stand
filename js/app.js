@@ -276,28 +276,6 @@ function row2(rawToUpdate) {
 
 }
 
-Store.prototype.tableContent2 = function (All, Up) {
-    //second row
-    for (var j = Up; j < All.length; j++) {
-        var row2 = document.createElement('tr');
-        tableE1.appendChild(row2);
-
-        var td1 = document.createElement('td');
-        row2.appendChild(td1);
-        td1.textContent = All[j].location;
-
-        for (var i = 0; i < All[j].array1.length; i++) {
-            var td3 = document.createElement('td');
-            row2.appendChild(td3);
-            td3.textContent = All[j].array1[i];
-
-        }
-        var td4 = document.createElement('td');
-        row2.appendChild(td4);
-        td4.textContent = All[j].sum;
-
-    }
-}
 
 
 
