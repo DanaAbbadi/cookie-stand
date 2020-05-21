@@ -85,6 +85,7 @@ Store.prototype.tableContent = function (All) {
     var ju=0;
     if (updateStore === true) {
         ju = toUpdate;
+        updateStore = false;
     }
 
     for (var j = ju; j < All.length; j++) {
@@ -245,7 +246,7 @@ addLocation.addEventListener('submit', function (event) {
         newLocation.getCst(newLocation.MinCst, newLocation.MaxCst);
         newLocation.getArray();
         newLocation.tableContent(AllStores);
-    newLocation.tableFooter(AllStores);
+        newLocation.tableFooter(AllStores);
 
     }
 
