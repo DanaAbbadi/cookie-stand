@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
-    font-family:'Quicksand', sans-serif;
+    /* font-family:'Quicksand', sans-serif; */
     font-size: 20px;
-background-color: black;  
-  background-repeat: no-repeat;
+    background-color: black;  
+    background-repeat: no-repeat;
     height: 100%;
     background-position: center;
     background-size: cover;
     color: goldenrod;
+}
+
+body p{
+  font-family:  Arial, Verdana, Helvetica;
 }
 
 
@@ -32,8 +35,8 @@ background-color: black;
 .my-header h1{
     font-size: 25px;
     float: left;
-
-}
+    font-family: 'Pacifico', cursive;
+  }
  #sal {                  /*salmon picture */
     display: block;
     position: fixed;
@@ -53,6 +56,8 @@ background-color: black;
     padding: 0 10px;
     text-transform: uppercase;
     font-size: 15px;
+    font-family: 'Pacifico', cursive;
+
 }
 .my-header nav ul li :hover {
     background: #fee2b3;
@@ -120,6 +125,8 @@ background-color: black;
     margin-top: 2cm;
     text-align: center;
     font-size: 50px;
+    font-family: 'Pacifico', cursive;
+
 }
 
 .intro p{
@@ -179,10 +186,11 @@ background-color: black;
   #menu h3 {
     padding-top: 0px;
     text-align: center;
-    font-family: 'Courgette', cursive;
     color: black;
     font-size: 50px;
     background-color:rgba(63, 45, 3, 0.959) ;
+    font-family: 'Pacifico', cursive;
+
   }
 
   #menu ul {
@@ -310,6 +318,7 @@ table {
     width: 100%;
     text-align: center;
     margin-top: 3cm;
+    font-family: Georgia, Times;
 
 }
 table, th, td {
@@ -338,10 +347,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     width: 100%;
     bottom: 0px;
 }
-#ftr{
-   
-    /* background-color: #8d6262; */
-  }
+
   #ftr2{
     /* background-color: #8d6262; */
     text-align: center;
